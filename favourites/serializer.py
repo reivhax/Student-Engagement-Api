@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from .models import Favourite, Comments
 
-
 class FavouriteSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
