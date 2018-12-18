@@ -10,6 +10,8 @@ class Favourite(models.Model):
 
 
 class Comments(models.Model):
-    comment = models.ForeignKey(
+    article = models.ForeignKey(
         'engagementApp.Articles', related_name='comments')
     user_uuid = models.TextField()
+    comment = models.TextField(blank=False, null=False)
+    display_name = models.TextField()
