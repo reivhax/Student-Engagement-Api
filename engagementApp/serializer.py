@@ -1,15 +1,8 @@
 from rest_framework import serializers
 from .models import Articles
-from favourites.models import Comments
+from favourites.serializer import CommentSerializer
 from django.contrib.auth.models import User
 from . import views
-
-
-class CommentSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Comments
-        fields = ('comment', 'user_uuid', 'display_name')
 
 
 class ArticleSerializer(serializers.HyperlinkedModelSerializer):

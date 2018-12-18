@@ -1,7 +1,6 @@
 virtual/
-studentEngagement/__pycache__/
 .vscode/
-engagementApp/__pycache__/
-engagementApp/migrations/__pycache__/
+__pycache__/
+*.pyc
 .env
 .idea/
